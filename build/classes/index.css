@@ -9,6 +9,35 @@ and open the template in the editor.
 */
 
 .root{
-    background-color: red;
-    -fx-background-color: red;
+    -fx-background-color: white;
 }
+.button{
+    -fx-pref-height: 40.0;
+    -fx-pref-width: 60.0;
+    -fx-background-color: rgb(230,230,230);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+
+}
+.cbutton{
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+.equalSymbol{
+    -fx-background-color: #3498db;
+    -fx-text-fill: white; 
+}
+.results{
+    -fx-font-size: 25;
+    -fx-fill: rgb(50,50,50);
+}
+.resultsArea{
+    -fx-pref-width: 280;
+    -fx-pref-height: 68;
+    -fx-text-alignment: right;
+    -fx-padding: 20 20 0 0;
+    -fx-border-color: rgb(50,50,50);
+    -fx-border-width: 0.5;
+    -fx-border-radius: 5;
+}
+

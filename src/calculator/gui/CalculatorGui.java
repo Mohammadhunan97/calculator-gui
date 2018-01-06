@@ -22,9 +22,13 @@ public class CalculatorGui extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
         Scene scene = new Scene(root);
+        stage.setTitle("Java Calculator");
+
         scene.getStylesheets().add("index.css");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+     
     }
 
     /**

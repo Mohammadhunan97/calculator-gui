@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.gui.FXMLDocumentController">
+
+
+
+<AnchorPane id="AnchorPane" prefHeight="322" prefWidth="280" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.gui.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+
+        <TextFlow styleClass="resultsArea" layoutY="10">
+            <Text fx:id="results" styleClass="results" text="275-" />
+        </TextFlow>
+        <Button styleClass="cbutton" layoutX="10" layoutY="90" text="C" onAction="#handleButtonAction" fx:id="button" />
+        <Button layoutX="10" layoutY="135" text="7"  />
+        <Button layoutX="10" layoutY="180" text="4" />
+        <Button layoutX="10" layoutY="225" text="1" />
+        <Button layoutX="10" layoutY="270" text="0" />
+        
+        
+        <Button layoutX="75" layoutY="90" text="Del" />
+        <Button layoutX="75" layoutY="135" text="8" />
+        <Button layoutX="75" layoutY="180" text="5" />
+        <Button layoutX="75" layoutY="225" text="2" />
+        <Button layoutX="75" layoutY="270" text="." />
+        
+        <Button layoutX="140" layoutY="90" text=" % " />
+        <Button layoutX="140" layoutY="135" text="9" />
+        <Button layoutX="140" layoutY="180" text="6" />
+        <Button layoutX="140" layoutY="225" text="3" />
+        <Button layoutX="140" layoutY="270" text="ANS" />
+        
+        
+        <Button layoutX="205" layoutY="90" text=" / " />
+        <Button layoutX="205" layoutY="135" text=" x " />
+        <Button layoutX="205" layoutY="180" text=" - " />
+        <Button layoutX="205" layoutY="225" text=" + " />
+        <Button styleClass="equalSymbol" layoutX="205" layoutY="270" text=" = " />
+
     </children>
 </AnchorPane>
