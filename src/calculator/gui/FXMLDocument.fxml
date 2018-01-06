@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-
+ 
 
 
 
@@ -15,31 +15,31 @@
         <TextFlow styleClass="resultsArea" layoutY="10">
             <Text fx:id="results" styleClass="results" text="275-" />
         </TextFlow>
-        <Button styleClass="cbutton" layoutX="10" layoutY="90" text="C" onAction="#handleButtonAction" fx:id="button" />
-        <Button layoutX="10" layoutY="135" text="7"  />
-        <Button layoutX="10" layoutY="180" text="4" />
-        <Button layoutX="10" layoutY="225" text="1" />
-        <Button layoutX="10" layoutY="270" text="0" />
+        <Button styleClass="cbutton" layoutX="10" layoutY="90" text="C" onAction="#handleClear" fx:id="button" />
+        <Button layoutX="10" layoutY="135" text="7"  onAction="#handleGetNum"/>
+        <Button layoutX="10" layoutY="180" text="4"  onAction="#handleGetNum"/>
+        <Button layoutX="10" layoutY="225" text="1"  onAction="#handleGetNum"/>
+        <Button layoutX="10" layoutY="270" text="0"  onAction="#handleGetNum"/>
         
         
         <Button layoutX="75" layoutY="90" text="Del" />
-        <Button layoutX="75" layoutY="135" text="8" />
-        <Button layoutX="75" layoutY="180" text="5" />
-        <Button layoutX="75" layoutY="225" text="2" />
-        <Button layoutX="75" layoutY="270" text="." />
+        <Button layoutX="75" layoutY="135" text="8"  onAction="#handleGetNum"/>
+        <Button layoutX="75" layoutY="180" text="5"  onAction="#handleGetNum"/>
+        <Button layoutX="75" layoutY="225" text="2"  onAction="#handleGetNum"/>
+        <Button layoutX="75" layoutY="270" text="."  onAction="#handleGetNum"/>
         
         <Button layoutX="140" layoutY="90" text=" % " />
-        <Button layoutX="140" layoutY="135" text="9" />
-        <Button layoutX="140" layoutY="180" text="6" />
-        <Button layoutX="140" layoutY="225" text="3" />
+        <Button layoutX="140" layoutY="135" text="9" onAction="#handleGetNum"/>
+        <Button layoutX="140" layoutY="180" text="6" onAction="#handleGetNum"/>
+        <Button layoutX="140" layoutY="225" text="3" onAction="#handleGetNum"/>
         <Button layoutX="140" layoutY="270" text="ANS" />
         
         
-        <Button layoutX="205" layoutY="90" text=" / " />
-        <Button layoutX="205" layoutY="135" text=" x " />
-        <Button layoutX="205" layoutY="180" text=" - " />
-        <Button layoutX="205" layoutY="225" text=" + " />
-        <Button styleClass="equalSymbol" layoutX="205" layoutY="270" text=" = " />
+        <Button layoutX="205" layoutY="90" text="/" onAction="#handleOperator"/>
+        <Button layoutX="205" layoutY="135" text="*" onAction="#handleOperator"/>
+        <Button layoutX="205" layoutY="180" text="-" onAction="#handleOperator"/>
+        <Button layoutX="205" layoutY="225" text="+" onAction="#handleOperator"/>
+        <Button styleClass="equalSymbol" layoutX="205" layoutY="270" text=" = "  onAction="#handleSolution" />
 
     </children>
 </AnchorPane>
